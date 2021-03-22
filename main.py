@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import datetime
 from discord_webhook import DiscordWebhook
-from config import *
+from conf import *
 logtime = datetime.datetime.now()
 timenow = logtime.strftime("%c")
 
