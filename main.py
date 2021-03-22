@@ -58,8 +58,6 @@ readusd = open("usd.txt", "r")
 oldxcd = readxcd.read()
 oldusd = readusd.read()
 
-whtsappnum = "phone=+12645839999"
-whtsappapi = "apikey=177844"
 
 if not xcdamt == oldxcd:
     messge = xcdamt + " Is your new XCD balance"
