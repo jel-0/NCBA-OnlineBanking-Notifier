@@ -80,7 +80,7 @@ if not usdamt == oldusd:
     wtsmsg = usdamt + "+Is+your+new+USD+balance"
     webhook = DiscordWebhook(url='https://discordapp.com/api/webhooks/816492789307146240/VXFchUIUUEioJkVry7UiFTsTyxzIav6P8-6VsFZ5tzkOaDOQiTaoB7nQsA_pyYyUHT4L', content=messge)
     response = webhook.execute()
-    driver.get("https://api.callmebot.com/whatsapp.php?phone=+12645839999&text=" + wtsmsg + "&apikey=177844")
+    driver.get("https://api.callmebot.com/whatsapp.php?" + whtsappnum + "&text=" + wtsmsg + "&" + whtsappapi)
     f = open("usd.txt", "w")
     f.write(usdamt)
     f.close()
